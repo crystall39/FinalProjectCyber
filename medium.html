@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Medium</title>
+  <link rel="stylesheet" href="medium.css" type="text/css">
+  <script src="medium.js"></script>
+  </head>
+  <body>
+    <nav class = "navbar">
+      <div class = "item" id = "logo">
+        <div id = "circle"></div>
+      </div>
+      <div class = "item page"> <h1>Medium</h1> </div>
+    </nav>
+
+    <div class = "container">
+        <div class = "one">
+            <div class = inbox>
+                <h1> Inbox </h1>
+            </div>
+            <div class = "title">
+                <h2> Web Exploitation </h2>
+            </div>
+            <div class = "contents">
+                <h3> Dear Agent,</h3>
+                <h3> Hey there! Thanks for your help last time.
+                     We hate to ask you again for help but we
+                     really need your expertise in cybersecurity.
+                </h3>
+                <h3> This time, we have no actual information as
+                     to where the username and password are but
+                     some developers might be careless and leave
+                     information hiding somewhere in the website.
+                </h3>
+                <h3> Maybe start there? Thanks a bunch!</h3>
+                <h3>
+                    Sincerely,<br> Agent B and Agent C
+                </h3>
+            </div>
+        </div>
+        <div class = "two">
+            <div class = website>
+                <h1> CyberstartSucks.com </h1>
+            </div>
+            <div class = "verticalcenter">
+                <form class = "center">
+                    <div class = "username">
+                        <h2> Username:</h2>
+                    </div>
+                    <div class = "userbox">
+                        <input type="text" id = "name" class = "box" autocomplete="off">
+                    </div>
+                    <div class = "password">
+                        <h2> Password:</h2>
+                    </div>
+                    <div class = "userbox">
+                        <input type="text" id = "pass" class = "box" autocomplete="off">
+                    </div>
+                    <!-- Personal note:
+                    Hash the username and password with SHA256
+                    Username: CoffinDigger12
+                    Password:AHer064!
+                    -->
+                    <input type="button" value="Submit" class = "submit" onclick="login()">
+                </form>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
